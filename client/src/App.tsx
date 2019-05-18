@@ -6,6 +6,7 @@ import { CurrencyExchange } from "./components/CurrencyExchange";
 import { Spinner } from "./components/Spinner/Spinner";
 import { getCSVData } from "./utils";
 import { useFinancialData } from "./financial-data-hooks";
+import React from "react";
 
 const App = () => {
   const { finData, rates } = useFinancialData();
