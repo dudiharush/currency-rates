@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  color: black;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.export-btn {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.export-btn:hover {
+  background-color: #5a6268;
+}
+
+.currency-selection-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.amount-field {
+  width: 100px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

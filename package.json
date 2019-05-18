@@ -1,0 +1,28 @@
+{
+  "name": "currency-rates",
+  "version": "1.0.0",
+  "description": "Display financial data using React Hooks",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p start-server start-client",
+    "start-server": "cd server && npm start",
+    "start-client": "cd client && npm start",
+    "install": "run-p install-server install-client",
+    "install-server": "cd server && npm i",
+    "install-client": "cd client && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudiharush/currency-rates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudiharush/currency-rates/issues"
+  },
+  "homepage": "https://github.com/dudiharush/currency-rates#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
