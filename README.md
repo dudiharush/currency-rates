@@ -1,2 +1,2 @@
 # currency-rates
-Display financial data using Rect Hooks
+Display financial data using React Hooks
