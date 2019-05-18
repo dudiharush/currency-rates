@@ -3,6 +3,11 @@
   color: black;
 }
 
+.dropdown-menu {
+  height: 170px;
+  overflow-y: scroll;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;

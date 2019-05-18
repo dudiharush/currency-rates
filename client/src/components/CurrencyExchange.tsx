@@ -39,12 +39,16 @@ export const CurrencyExchange = ({
         value={inputAmount}
         onChange={e => setInputAmount(e.target.value)}
       />
-      <span>{selectedCurrency}</span>
+      <span>
+        <b>{selectedCurrency}</b>
+      </span>
       <span className="ml-20">in USD:</span>
       <span>
-        {new Decimal(inputAmount || 0)
-          .dividedBy(rates[selectedCurrency] || 0)
-          .toFixed(4)}
+        <b>
+          {new Decimal(inputAmount || 0)
+            .dividedBy(rates[selectedCurrency] || 0)
+            .toFixed(4)}
+        </b>
       </span>
     </div>
   );

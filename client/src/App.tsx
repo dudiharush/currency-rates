@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import { loadFinData, loadRates } from "./data-loaders";
-import Decimal from "decimal.js";
 import { CSVLink } from "react-csv";
 import { PerUnitTable } from "./components/PerUnitTable";
 import { AllUnitsTable } from "./components/AllUnitsTable";
