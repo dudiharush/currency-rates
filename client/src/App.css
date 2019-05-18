@@ -24,7 +24,7 @@ table {
   background-color: #6c757d;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 8px 16px;
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
@@ -32,6 +32,11 @@ table {
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
+}
+
+.App a.export-btn:hover {
+  text-decoration: initial;
+  color: white;
 }
 
 .export-btn:hover {

@@ -1,5 +1,5 @@
 import "./Spinner.css";
-import React, { useState } from "react";
+import React from "react";
 
 export const Spinner = () => (
   <div className="spinner">
