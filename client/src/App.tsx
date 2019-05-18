@@ -1,29 +1,15 @@
-import React, { useState } from "react";
 import "./App.css";
-import { loadFinData, loadRates } from "./data-loaders";
 import { CSVLink } from "react-csv";
 import { PerUnitTable } from "./components/PerUnitTable";
 import { AllUnitsTable } from "./components/AllUnitsTable";
 import { CurrencyExchange } from "./components/CurrencyExchange";
 import { Spinner } from "./components/Spinner/Spinner";
 import { getCSVData } from "./utils";
+import { useFinancialData } from "./financial-data-hooks";
 
 const App = () => {
-  const [finData, setFinData] = useState();
-  const [rates, setRates] = useState();
+  const { finData, rates } = useFinancialData();
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      loadFinData().then(setFinData);
-      loadRates("USD").then(setRates);
-    }, 2000);
-
-    loadRates("USD").then(setRates);
-    const handleId = setInterval(() => {
-      loadRates("USD").then(setRates);
-    }, 10000);
-    return () => clearTimeout(handleId);
-  }, []);
   if (!rates || !finData) return <Spinner />;
 
   const currencies = Object.keys(rates);
